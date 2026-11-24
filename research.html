@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<meta content="Kaixuan Liu’s research experience in quadrupedal ladder climbing and force-feedback teleoperation." name="description"/>
+<meta content="#ffffff" name="theme-color"/>
+<title>Research | Kaixuan Liu</title>
+<link href="resources/favicon.svg" rel="icon" type="image/svg+xml"/>
+<link href="resources/stylesheet.css" rel="stylesheet"/>
+<link href="resources/shared-styles.css" rel="stylesheet"/>
+<link href="resources/site-styles.css" rel="stylesheet"/>
+<link href="resources/content-only.css" rel="stylesheet"/>
+</head>
+<body>
+<a class="skip-link" href="#main-content">Skip to main content</a>
+<header class="site-header">
+<a class="site-name" href="homepage.html">Kaixuan Liu</a>
+<nav aria-label="Main navigation" class="nav-buttons"><a class="nav-button" href="homepage.html">Home</a><a class="nav-button" href="publications.html">Publications</a><a class="nav-button" href="research.html" aria-current="page">Research</a><a class="nav-button" href="projects.html">Projects</a>
+
+<button aria-label="Switch to dark mode" aria-pressed="false" class="theme-toggle" id="theme-toggle" type="button"><svg aria-hidden="true" height="20" viewbox="0 0 24 24" width="20"><path d="M20.3 14.1A8.5 8.5 0 0 1 9.9 3.7 8.5 8.5 0 1 0 20.3 14.1Z" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.7"></path></svg></button>
+</nav>
+</header>
+<main class="page-shell main-content-wrapper" id="main-content">
+<h1 class="page-title">Research</h1>
+
+<section class="cv-content cv-section" aria-labelledby="research-experience-title">
+<h2 class="cv-section-title" id="research-experience-title">Research Experience</h2>
+<article class="cv-research-group" id="ladder-climbing">
+<h3 class="cv-organization">Institute of Design and Control Engineering</h3>
+<p class="cv-role">Research Assistant, advised by Prof. Chenkun Qi</p>
+<div class="cv-project">
+<div class="cv-project-heading"><h4>Reinforcement Learning of Quadrupedal Ladder Climbing</h4><p class="cv-date">Mar 2026-Oct 2026</p></div>
+<ul class="cv-bullets">
+<li>Developed a <strong>hook-shaped contact-sensing end effector</strong> with a <strong>force-sensitive resistor</strong> for secure rung engagement, and used the <strong>ADC of an STM32 microcontroller</strong> to sample the voltage divider output during deployment for local contact feedback.</li>
+<li>Adapted the <strong>Legged Gym</strong> framework to train quadrupedal ladder-climbing policies using <strong>contact-aware reward functions</strong> and an <strong>adaptive terrain curriculum</strong>.</li>
+<li>Proposed an <strong>RL-based locomotion policy</strong> fusing forward depth, contact sensing and proprioception through <strong>explicit state reconstruction</strong>, which enabled a quadruped Unitree Go2 to climb ladders of <strong>different inclinations and rung spacings</strong> with an overall <strong>82.9%</strong> success rate.</li>
+</ul>
+<figure class="cv-project-image"><a href="resources/cover_fig.drawio.pdf" aria-label="Open the ladder-climbing experiment figure as a PDF"><img src="resources/cover-fig.png" alt="Unitree Go2 climbing ladders with different rung spacings and inclinations in four hardware experiments" width="1800" height="1426"></a></figure>
+</div>
+</article>
+<article class="cv-research-group" id="force-feedback">
+<h3 class="cv-organization">Machine Vision and Intelligence Group</h3>
+<p class="cv-role">Research Assistant, advised by Prof. Cewu Lu and Prof. Chuan Wen</p>
+<div class="cv-project">
+<div class="cv-project-heading"><h4>Development of a Low-Cost Force-Feedback Teleoperation System</h4><p class="cv-date">Nov 2026-Present</p></div>
+<ul class="cv-bullets">
+<li>Reduced the I2RT YAM driver latency to <strong>6 ms</strong> and designed a <strong>force feedback controller with latency compensation</strong> to collect teleoperated demonstrations.</li>
+<li>Developing a manipulation policy that uses <strong>force feedback</strong> as an input to perform <strong>contact-rich tasks</strong> such as Lego brick assembly.</li>
+</ul>
+<figure class="cv-project-image teleoperation-image"><img src="resources/teleoperation.svg" alt="Schematic illustration of a force-feedback teleoperation arm" loading="lazy" width="300" height="172"></figure>
+</div>
+</article>
+</section>
+</main>
+<footer class="site-footer"><div class="page-shell-footer"><p class="footer-copyright">© 2026 <a href="homepage.html">Kaixuan Liu</a> · <a href="https://github.com/Arvid-pku/Academic-Homepage-Template">Arvid template</a></p><p class="footer-social"><a href="mailto:kentliukx@sjtu.edu.cn">Email</a></p></div></footer>
+<script src="resources/site.js"></script>
+</body>
+</html>
