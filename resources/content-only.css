@@ -6,13 +6,25 @@
 .profile-links a { overflow-wrap: anywhere; }
 .profile-links .cv-link { border: 1px solid var(--primary-color); border-radius: 5px; padding: 6px 12px; }
 .cv-link span { font-size: 14px; font-weight: 400; }
-.profile-photo { object-position: center 23%; }
+.profile-photo { aspect-ratio: 5 / 6; object-position: center 18%; }
 .site-header .nav-button[aria-current="page"] { color: var(--primary-color); }
 .site-header .nav-button[aria-current="page"]::after { background-color: var(--primary-color); }
 .homepage-section, .cv-project, .cv-research-group { scroll-margin-top: 24px; }
+.experience-previews { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 28px; }
+.experience-preview { display: block; min-width: 0; color: var(--text-color); }
+.experience-preview-image { aspect-ratio: 4 / 3; overflow: hidden; border-radius: 6px; background: white; }
+.experience-preview-image img { display: block; width: 100%; height: 100%; object-fit: cover; }
+.ladder-preview img { object-position: 80% 50%; transform: scale(1.4); transform-origin: 80% 50%; }
+.experience-previews .papertitle { margin: 14px 0 8px; }
+.experience-preview p { margin: 0; font-size: 16px; line-height: 1.65; color: var(--text-muted); }
+.experience-preview:hover, .experience-preview:focus-visible { text-decoration: none; }
+.experience-preview:hover .papertitle, .experience-preview:focus-visible .papertitle { color: var(--primary-color); text-decoration: underline; text-underline-offset: 3px; }
+.footer-social { display: flex; flex-wrap: wrap; justify-content: flex-start; align-items: center; gap: 18px; }
+.footer-social a { opacity: 1; }
+.footer-social a:hover { transform: none; }
 
 /* The CV's original hierarchy, bullets, dates, and emphasis. */
-.cv-content { font-family: 'Times New Roman', Times, serif; font-size: 18px; line-height: 1.5; }
+.cv-content { font-family: inherit; font-size: 1rem; line-height: 1.65; }
 .cv-content p, .cv-content strong, .cv-content a { font-family: inherit; }
 .cv-content strong { color: inherit; }
 .cv-section { margin-top: 36px; }
@@ -25,24 +37,41 @@
 .cv-date { flex-shrink: 0; white-space: nowrap; margin: 0; font-size: 16px; font-variant-numeric: tabular-nums; }
 .cv-bullets { list-style: disc !important; padding-left: 1.1em !important; margin: 4px 0 16px !important; }
 .cv-bullets li { margin: 0 0 4px !important; padding: 0 !important; }
+.cv-description { margin: 8px 0 16px; }
+.research-content .cv-project, .projects-content .cv-project { margin-left: 0; }
+.research-content .papertitle { margin: 0; }
+.projects-content > .papertitle { margin: 0 0 16px; }
+.research-content .cv-description, .projects-content .cv-description { color: var(--text-muted); line-height: 1.65; }
 .cv-project-image { margin: 20px 0 0; max-width: 480px; }
 .cv-project-image img { display: block; width: 100%; height: auto; }
 .cv-project-image a { display: block; }
+.cv-project-image figcaption { margin-top: 8px; font-size: 14px; line-height: 1.55; color: var(--text-faint); opacity: 1; }
+.research-gallery, .project-images { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 24px; margin-top: 20px; }
+.research-gallery .cv-project-image, .project-images .cv-project-image { margin: 0; max-width: none; min-width: 0; }
+.research-gallery .cv-project-image a { aspect-ratio: 1800 / 1426; background: white; }
+.research-gallery .cv-project-image img { height: 100%; object-fit: contain; }
+.lego-gallery .cv-project-image img { aspect-ratio: 1 / 1; height: auto; object-fit: cover; object-position: center 65%; border-radius: 6px; }
 .cv-project-image.teleoperation-image { max-width: 360px; background: white; border-radius: 6px; }
 .cv-publications { counter-reset: publication; padding-left: 1.8em !important; margin: 0 !important; }
 .cv-publications li { position: relative; counter-increment: publication; }
 .cv-publications li::before { content: '[' counter(publication) ']'; position: absolute; right: calc(100% + 8px); }
 
 /* Background information retained from the original homepage. */
-.education-heading { display: flex; justify-content: space-between; gap: 16px; }
+.education-entry { display: grid; grid-template-columns: minmax(0, 1fr) 75px; gap: 24px; align-items: center; }
+.education-details { min-width: 0; }
+.education-emblem { display: block; background: white; border-radius: 50%; }
+.education-emblem img { display: block; width: 100%; height: auto; }
+.education-heading { display: flex; justify-content: space-between; gap: 16px; margin-bottom: 14px; }
 .education-heading h3 { font-size: 18px; }
 .education-heading p { margin: 4px 0 0; color: var(--text-muted); }
-.education-heading .experience-period { color: var(--text-faint); }
-.education-degree { margin: 14px 0 24px; color: var(--text-muted); }
+.education-heading .experience-period { color: var(--text-faint); text-align: right; }
+.education-degree { margin: 0; color: var(--text-muted); }
 .skills-list { margin: 0; }
 .skills-list > div { display: grid; grid-template-columns: 180px minmax(0, 1fr); gap: 20px; padding: 12px 0; border-bottom: 1px solid var(--border-color); }
 .skills-list dt { font-weight: 700; }
 .skills-list dd { margin: 0; color: var(--text-muted); }
+.award-photo { grid-column: 2; margin: 0; max-width: 560px; min-width: 0; }
+.award-photo img { display: block; width: 100%; height: auto; border-radius: 6px; }
 .jiaoloong-photos { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; margin-top: 28px; }
 .jiaoloong-photos figure { margin: 0; min-width: 0; }
 .jiaoloong-photos img { display: block; width: 100%; height: auto; border-radius: 6px; }
@@ -53,14 +82,16 @@
   .profile-text .name { font-size: 38px; }
 }
 @media (max-width: 600px) {
+  .experience-previews { grid-template-columns: minmax(0, 1fr); gap: 28px; }
+  .research-gallery, .project-images { grid-template-columns: minmax(0, 1fr); }
   .site-header .nav-buttons { flex-wrap: wrap; overflow: visible; margin: 8px 0 0; padding: 0; gap: 2px; }
   .site-header .nav-button { font-size: 14px; padding: 6px; }
   .profile-section { display: flex; flex-direction: column-reverse; }
   .profile-eyebrow { max-width: 280px; }
   .cv-project { margin-left: 0; }
   .cv-project-heading { flex-direction: column; gap: 2px; }
-  .cv-content { font-size: 17px; }
   .jiaoloong-photos { grid-template-columns: 1fr; gap: 22px; }
   .education-heading { display: block; }
+  .education-entry { grid-template-columns: minmax(0, 1fr) 48px; gap: 16px; }
   .skills-list > div { grid-template-columns: 1fr; gap: 4px; }
 }

@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1" name="viewport"/>
-<meta content="Kaixuan Liu’s project experience with Team Jiaoloong, reproduced from the CV." name="description"/>
+<meta content="Kaixuan Liu’s project experience with Team Jiaoloong in robot control, modeling, and mechanical systems." name="description"/>
 <meta content="#ffffff" name="theme-color"/>
 <title>Projects | Kaixuan Liu</title>
 <link href="resources/favicon.svg" rel="icon" type="image/svg+xml"/>
@@ -15,47 +15,36 @@
 <body>
 <a class="skip-link" href="#main-content">Skip to main content</a>
 <header class="site-header">
-<a class="site-name" href="homepage.html">Kaixuan Liu</a>
-<nav aria-label="Main navigation" class="nav-buttons"><a class="nav-button" href="homepage.html">Home</a><a class="nav-button" href="publications.html">Publications</a><a class="nav-button" href="research.html">Research</a><a class="nav-button" href="projects.html" aria-current="page">Projects</a>
+<a class="site-name" href="index.html">Kaixuan Liu</a>
+<nav aria-label="Main navigation" class="nav-buttons"><a class="nav-button" href="index.html">Home</a><a class="nav-button" href="publications.html">Publications</a><a class="nav-button" href="research.html">Research</a><a class="nav-button" href="projects.html" aria-current="page">Projects</a>
 
-<button aria-label="Switch to dark mode" aria-pressed="false" class="theme-toggle" id="theme-toggle" type="button"><svg aria-hidden="true" height="20" viewbox="0 0 24 24" width="20"><path d="M20.3 14.1A8.5 8.5 0 0 1 9.9 3.7 8.5 8.5 0 1 0 20.3 14.1Z" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.7"></path></svg></button>
+<button aria-label="Switch to dark mode" aria-pressed="false" class="theme-toggle" id="theme-toggle" type="button"><svg aria-hidden="true" height="20" viewBox="0 0 24 24" width="20"><path d="M20.3 14.1A8.5 8.5 0 0 1 9.9 3.7 8.5 8.5 0 1 0 20.3 14.1Z" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.7"></path></svg></button>
 </nav>
 </header>
 <main class="page-shell main-content-wrapper" id="main-content">
-<h1 class="page-title">Projects</h1>
-<section class="cv-content cv-section" aria-labelledby="project-experience-title">
-<h2 class="cv-section-title" id="project-experience-title">Project Experience</h2>
-<h3 class="cv-organization">Electronics and Control Division of Team Jiaoloong</h3>
-<p class="cv-role">Deputy Head (Sep 2025-Present); Member (Sep 2024-Aug 2025)</p>
+<h1 class="page-title" id="project-experience-title">Projects</h1>
+<section class="projects-content cv-section" aria-labelledby="project-experience-title">
+<h2 class="papertitle">Electronics and Control Division of Team Jiaoloong</h2>
 <article class="cv-project" id="swerve-drive">
-<div class="cv-project-heading"><h4>Control of a 6-DOF Robot Arm on a Swerve Drive Chassis</h4><p class="cv-date">Nov 2024-Oct 2025</p></div>
-<ul class="cv-bullets">
-<li>Programmed an <strong>STM32 microcontroller</strong> for Cartesian pose interpolation through <strong>multiple waypoints</strong>.</li>
-<li>Integrated <strong>Manipulator Dynamics Compensation</strong> into the arm controller.</li>
-<li>Implemented <strong>forward and inverse kinematics</strong> for a <strong>swerve drive chassis</strong>.</li>
-</ul>
-<figure class="cv-project-image"><img src="resources/swerve-drive-robot.jpg" alt="Team Jiaoloong's swerve-drive robot with a six-degree-of-freedom robot arm" width="4000" height="2667"></figure>
+<p class="cv-description">I joined <a href="https://jiaoloong.sjtu.edu.cn/zh-cn/">Team Jiaoloong</a>, Shanghai Jiao Tong University’s <a href="https://www.robomaster.com/">RoboMaster</a> team, in October 2024. As a member of the Electronics and Control Division, I worked on the Engineer robot, which consisted of a 6-DOF robot arm mounted on a swerve drive chassis. During my first year with Team Jiaoloong, I taught myself robotics and programmed an STM32 microcontroller on the robot to perform tasks such as retrieving and storing ore blocks. I also led the electrical wiring of the entire robot. As a core team member, I competed in the 2025 RoboMaster University Championship, where we successfully defended the <a href="https://news.sjtu.edu.cn/jdyw/20250807/213490.html">national title</a>.</p>
+<div class="project-images">
+<figure class="cv-project-image"><img src="resources/onsite-debugging.jpg" alt="Kaixuan Liu debugging the Engineer robot at the competition field" width="2048" height="1365" loading="lazy"/><figcaption>On-site debugging of the Engineer robot.</figcaption></figure>
+<figure class="cv-project-image"><img src="resources/swerve-drive-robot.jpg" alt="Engineer robot retrieving an ore block with its swerve chassis spinning" width="4000" height="2667" loading="lazy"/><figcaption>Engineer robot retrieving an ore block with its swerve chassis spinning.</figcaption></figure>
+</div>
 </article>
 <article class="cv-project" id="wheeled-bipedal">
-<div class="cv-project-heading"><h4>Modeling and Simulation of a Wheeled Bipedal Robot</h4><p class="cv-date">Nov 2025-Dec 2025</p></div>
-<ul class="cv-bullets">
-<li>Modeled a <strong>wheeled bipedal robot</strong> with parallel leg mechanisms as a W-SLIP system.</li>
-<li>Applied an <strong>NMPC controller</strong> to the robot in Gazebo Simulator.</li>
-</ul>
-<figure class="cv-project-image"><img src="resources/wheeled-bipedal-robot.jpg" alt="Team Jiaoloong's wheeled bipedal robot at RoboMaster" loading="lazy" width="2048" height="1365"></figure>
+<p class="cv-description">During my second year, I implemented Cartesian pose interpolation through multiple waypoints and integrated manipulator dynamics compensation into the arm controller. I also modeled a wheeled bipedal robot with parallel leg mechanisms as a W-SLIP system and applied an NMPC controller to the robot in Gazebo.</p>
+<p class="cv-description">That summer, I collaborated with members of the Mechanical Division to design and finalize the kinematic configuration of a foldable dual-arm Engineer robot. I selected the joint actuators for both manipulators, designed the robot’s electrical architecture, and led the electrical wiring. I also demonstrated impedance control for part assembly, including a translation and two sequential rotations.</p>
+<div class="project-images">
+<figure class="cv-project-image"><img src="resources/wheeled-bipedal-robot.jpg" alt="The wheeled bipedal Infantry robot modeled in the simulator" width="4000" height="2667" loading="lazy"/><figcaption>The wheeled bipedal Infantry robot modeled in the simulator.</figcaption></figure>
+<figure id="dual-arm" class="cv-project-image"><img alt="Teleoperated assembly of game pieces with the dual-arm Engineer robot" height="1366" loading="lazy" src="resources/dual-arm-robot.jpg" width="2048"/><figcaption>Teleoperated assembly with the dual-arm Engineer robot.</figcaption></figure>
+</div>
 </article>
-<article class="cv-project" id="dual-arm">
-<div class="cv-project-heading"><h4>Development of a Foldable Dual-Arm Robot</h4><p class="cv-date">May 2026-Aug 2026</p></div>
-<ul class="cv-bullets">
-<li>Co-designed the <strong>kinematic configuration</strong> and selected the <strong>joint actuators</strong> for both manipulators.</li>
-<li>Designed the robot’s <strong>electrical architecture</strong> and led the <strong>electrical wiring</strong>.</li>
-<li>Demonstrated <strong>impedance control</strong> for part assembly, including a translation and two sequential rotations.</li>
-</ul>
-<figure class="cv-project-image"><img src="resources/dual-arm-robot.jpg" alt="Team Jiaoloong's foldable dual-arm robot at RoboMaster" loading="lazy" width="2048" height="1366"></figure>
-</article>
+
+<p class="cv-description">As a senior member and deputy head of the Electronics and Control Division, I was responsible for training new members during the 2026 and 2027 seasons. In total, I trained more than 60 members, including the division’s current head.</p>
 </section>
 </main>
-<footer class="site-footer"><div class="page-shell-footer"><p class="footer-copyright">© 2026 <a href="homepage.html">Kaixuan Liu</a> · <a href="https://github.com/Arvid-pku/Academic-Homepage-Template">Arvid template</a></p><p class="footer-social"><a href="mailto:kentliukx@sjtu.edu.cn">Email</a></p></div></footer>
+<footer class="site-footer"><div class="page-shell-footer"><p class="footer-copyright">© 2026 <a href="index.html">Kaixuan Liu</a> · <a href="https://github.com/Arvid-pku/Academic-Homepage-Template">Arvid template</a></p><nav class="footer-social" aria-label="Footer links"><a href="mailto:kentliukx@sjtu.edu.cn">Email</a><a href="resources/Kaixuan_Liu_CV.pdf" download="Kaixuan_Liu_CV.pdf">CV</a><a href="https://github.com/kentliukx">GitHub</a></nav></div></footer>
 <script src="resources/site.js"></script>
 </body>
 </html>

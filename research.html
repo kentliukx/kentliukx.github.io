@@ -15,45 +15,47 @@
 <body>
 <a class="skip-link" href="#main-content">Skip to main content</a>
 <header class="site-header">
-<a class="site-name" href="homepage.html">Kaixuan Liu</a>
-<nav aria-label="Main navigation" class="nav-buttons"><a class="nav-button" href="homepage.html">Home</a><a class="nav-button" href="publications.html">Publications</a><a class="nav-button" href="research.html" aria-current="page">Research</a><a class="nav-button" href="projects.html">Projects</a>
+<a class="site-name" href="index.html">Kaixuan Liu</a>
+<nav aria-label="Main navigation" class="nav-buttons"><a class="nav-button" href="index.html">Home</a><a class="nav-button" href="publications.html">Publications</a><a class="nav-button" href="research.html" aria-current="page">Research</a><a class="nav-button" href="projects.html">Projects</a>
 
-<button aria-label="Switch to dark mode" aria-pressed="false" class="theme-toggle" id="theme-toggle" type="button"><svg aria-hidden="true" height="20" viewbox="0 0 24 24" width="20"><path d="M20.3 14.1A8.5 8.5 0 0 1 9.9 3.7 8.5 8.5 0 1 0 20.3 14.1Z" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.7"></path></svg></button>
+<button aria-label="Switch to dark mode" aria-pressed="false" class="theme-toggle" id="theme-toggle" type="button"><svg aria-hidden="true" height="20" viewBox="0 0 24 24" width="20"><path d="M20.3 14.1A8.5 8.5 0 0 1 9.9 3.7 8.5 8.5 0 1 0 20.3 14.1Z" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.7"></path></svg></button>
 </nav>
 </header>
 <main class="page-shell main-content-wrapper" id="main-content">
-<h1 class="page-title">Research</h1>
+<h1 class="page-title" id="research-experience-title">Research</h1>
 
-<section class="cv-content cv-section" aria-labelledby="research-experience-title">
-<h2 class="cv-section-title" id="research-experience-title">Research Experience</h2>
+<section class="research-content cv-section" aria-labelledby="research-experience-title">
 <article class="cv-research-group" id="ladder-climbing">
-<h3 class="cv-organization">Institute of Design and Control Engineering</h3>
-<p class="cv-role">Research Assistant, advised by Prof. Chenkun Qi</p>
 <div class="cv-project">
-<div class="cv-project-heading"><h4>Reinforcement Learning of Quadrupedal Ladder Climbing</h4><p class="cv-date">Mar 2026-Oct 2026</p></div>
-<ul class="cv-bullets">
-<li>Developed a <strong>hook-shaped contact-sensing end effector</strong> with a <strong>force-sensitive resistor</strong> for secure rung engagement, and used the <strong>ADC of an STM32 microcontroller</strong> to sample the voltage divider output during deployment for local contact feedback.</li>
-<li>Adapted the <strong>Legged Gym</strong> framework to train quadrupedal ladder-climbing policies using <strong>contact-aware reward functions</strong> and an <strong>adaptive terrain curriculum</strong>.</li>
-<li>Proposed an <strong>RL-based locomotion policy</strong> fusing forward depth, contact sensing and proprioception through <strong>explicit state reconstruction</strong>, which enabled a quadruped Unitree Go2 to climb ladders of <strong>different inclinations and rung spacings</strong> with an overall <strong>82.9%</strong> success rate.</li>
-</ul>
-<figure class="cv-project-image"><a href="resources/cover_fig.drawio.pdf" aria-label="Open the ladder-climbing experiment figure as a PDF"><img src="resources/cover-fig.png" alt="Unitree Go2 climbing ladders with different rung spacings and inclinations in four hardware experiments" width="1800" height="1426"></a></figure>
+<h2 class="papertitle">Reinforcement Learning of Quadrupedal Ladder Climbing</h2>
+<p class="cv-description">My interest in robot learning was sparked by a visit to <a href="https://www.unitree.com/">Unitree</a>'s headquarters in Hangzhou in the summer of 2025. In December, I joined the <a href="https://me.sjtu.edu.cn/upload2/file/20180927/Institute%20of%20Design%20and%20Control%20Engineering%20for%20Heavy%20Equipment.pdf">Institute of Design and Control Engineering for Heavy Equipment</a> and began my research on quadrupedal locomotion under the supervision of <a href="https://me.sjtu.edu.cn/teacher_directory1/qichenkun.html">Prof. Chenkun Qi</a>.</p>
+<p class="cv-description">In this project, I proposed an RL-based locomotion policy fusing forward depth, contact sensing and proprioception through explicit state reconstruction, which enabled a Unitree Go2 quadruped to climb ladders of different inclinations and rung spacings with an overall 82.9% success rate. For local contact feedback under visual occlusion, I developed a hook-shaped contact-sensing end effector with a force-sensitive resistor, and used the ADC of an STM32 microcontroller to sample the voltage divider output during deployment. I also designed contact-aware reward functions and an adaptive terrain curriculum to promote stable ladder-climbing behavior.</p>
+<div class="research-gallery">
+<figure class="cv-project-image">
+<a href="resources/effector.pdf" aria-label="Open the contact-sensing end-effector design as a PDF"><img src="resources/effector.png" alt="Front and rear hook-shaped end effectors and an exploded view of the force-sensitive resistor assembly" width="1800" height="923" loading="lazy"/></a>
+<figcaption>Hook-shaped contact-sensing end effector with an integrated force-sensitive resistor.</figcaption>
+</figure>
+<figure class="cv-project-image">
+<a href="resources/cover_fig.drawio.pdf" aria-label="Open the ladder-climbing experiment figure as a PDF"><img src="resources/cover-fig.png" alt="Unitree Go2 climbing ladders with different rung spacings and inclinations in four hardware experiments" width="1800" height="1426"></a>
+<figcaption>Unitree Go2 climbing ladders with different inclinations and rung spacings.</figcaption>
+</figure>
+</div>
 </div>
 </article>
 <article class="cv-research-group" id="force-feedback">
-<h3 class="cv-organization">Machine Vision and Intelligence Group</h3>
-<p class="cv-role">Research Assistant, advised by Prof. Cewu Lu and Prof. Chuan Wen</p>
 <div class="cv-project">
-<div class="cv-project-heading"><h4>Development of a Low-Cost Force-Feedback Teleoperation System</h4><p class="cv-date">Nov 2026-Present</p></div>
-<ul class="cv-bullets">
-<li>Reduced the I2RT YAM driver latency to <strong>6 ms</strong> and designed a <strong>force feedback controller with latency compensation</strong> to collect teleoperated demonstrations.</li>
-<li>Developing a manipulation policy that uses <strong>force feedback</strong> as an input to perform <strong>contact-rich tasks</strong> such as Lego brick assembly.</li>
-</ul>
-<figure class="cv-project-image teleoperation-image"><img src="resources/teleoperation.svg" alt="Schematic illustration of a force-feedback teleoperation arm" loading="lazy" width="300" height="172"></figure>
+<h2 class="papertitle">Development of a Low-Cost Force-Feedback Teleoperation System</h2>
+<p class="cv-description">As a senior member of <a href="https://jiaoloong.sjtu.edu.cn/zh-cn/">Team Jiaoloong</a>, I attended an informal discussion with <a href="https://www.dyna.co/">Dyna Robotics</a>, where I first learned about embodied AI and became interested in how such systems are built. I joined the <a href="https://www.mvig.org/">Machine Vision and Intelligence Group (MVIG)</a> under the supervision of <a href="https://scholar.google.com/citations?hl=en&amp;user=QZVQEWAAAAAJ">Prof. Cewu Lu</a> and <a href="https://scholar.google.com/citations?hl=en&amp;user=G5M9nYwAAAAJ">Prof. Chuan Wen</a>.</p>
+<p class="cv-description">In order to collect high-quality teleoperation data for contact-rich tasks, I reduced the I2RT YAM driver latency to 6 ms and designed a force-feedback controller with latency compensation. Currently, I am developing a manipulation policy that uses force feedback as an input to perform tasks requiring precise force control, such as LEGO brick assembly.</p>
+<div class="research-gallery lego-gallery" aria-label="LEGO brick assembly demonstrations">
+<figure class="cv-project-image"><img src="resources/lego0.png" alt="YAM picking up a brick" width="1125" height="2436" loading="lazy"/><figcaption>YAM picking up a brick.</figcaption></figure>
+<figure class="cv-project-image"><img src="resources/lego1.png" alt="YAM assembling the brick on a baseplate" width="1125" height="2436" loading="lazy"/><figcaption>YAM assembling the brick on a baseplate.</figcaption></figure>
+</div>
 </div>
 </article>
 </section>
 </main>
-<footer class="site-footer"><div class="page-shell-footer"><p class="footer-copyright">© 2026 <a href="homepage.html">Kaixuan Liu</a> · <a href="https://github.com/Arvid-pku/Academic-Homepage-Template">Arvid template</a></p><p class="footer-social"><a href="mailto:kentliukx@sjtu.edu.cn">Email</a></p></div></footer>
+<footer class="site-footer"><div class="page-shell-footer"><p class="footer-copyright">© 2026 <a href="index.html">Kaixuan Liu</a> · <a href="https://github.com/Arvid-pku/Academic-Homepage-Template">Arvid template</a></p><nav class="footer-social" aria-label="Footer links"><a href="mailto:kentliukx@sjtu.edu.cn">Email</a><a href="resources/Kaixuan_Liu_CV.pdf" download="Kaixuan_Liu_CV.pdf">CV</a><a href="https://github.com/kentliukx">GitHub</a></nav></div></footer>
 <script src="resources/site.js"></script>
 </body>
 </html>
